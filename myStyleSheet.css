@@ -1,8 +1,26 @@
+header {
+    margin-bottom: 4em;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 h1 {
     text-align: center;
-    color:#000080;
+    color:#4682B4;
     margin-bottom: .3em;
     text-decoration: underline;
+}
+
+h3 {
+    margin-left: 2em;
+}
+
+p {
+    margin-block-start: 0.1em;
+    margin-left: 4em;
 }
 
 .center{
