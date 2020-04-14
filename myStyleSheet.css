@@ -1,3 +1,7 @@
+title {
+    position: sticky;
+}
+
 header {
     margin-bottom: 4em;
 }
@@ -8,10 +12,7 @@ body {
 }
 
 h1 {
-    text-align: center;
-    color:#4682B4;
-    margin-bottom: .3em;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 h3 {
@@ -24,7 +25,42 @@ p {
 }
 
 .center{
-    display: block;
+    /*display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
+}
+
+.homePage{
+
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    margin-bottom: .3em;
+}
+
+.nav{
+    text-align: center;
+    color:#4682B4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.blockedText{
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.galSections{
+    padding: 1rem;
+    grid-gap: 10rem;
 }
