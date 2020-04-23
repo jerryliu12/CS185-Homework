@@ -24,15 +24,13 @@ p {
     margin-left: 4em;*/
 }
 
-.center{
-    /*display: block;
-    margin-left: auto;
-    margin-right: auto;*/
-}
-
 .homePage{
     margin-left: 2vw;
     text-align: center;
+}
+
+.picPage{
+    /*text-align: center;*/
 }
 
 .page3{
@@ -98,6 +96,12 @@ p {
     overflow: hidden;*/
 }
 
+.gallery .expand {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*
 .gallery .expand img:hover{
     top:-25px;
@@ -117,6 +121,9 @@ p {
 }
 
 .gallery iframe{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     min-height: 100px;
     height:auto;
@@ -131,4 +138,59 @@ button {
 button:hover {
     background-color: gray;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#topButton{
+    display:none;
+    position:fixed;
+    bottom: 0;
+    right:0;
+    background-color: antiquewhite;
+}
+
+#topButton.hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: gray;
+}
+
+.bigBackground{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    /*align-items: center;
+    opacity: 0.90;*/
+}
+
+
+html, body, .picPage, .bigBackground{
+    height: 100%;
+    margin:0;
+}
+
+.bigBackground  img{
+    display: block;
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 90%;
+    margin:20px auto;
+    position: fixed;
+    border: 10px white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
 }

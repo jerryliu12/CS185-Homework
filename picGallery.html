@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <link href="myStyleSheet.css" rel="stylesheet">
 <meta charset="UTF-8">
-<meta name="viewport" content="wdith=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
     <head>
         <meta charset="utf-8">
         <title>Jerry's Photos</title>
         <link rel="shortcut icon" type="image/x-icon" href="IMG_8572.jpg">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
-    <body class="homePage">
+    <body class="picPage">
         <header>
             <div class="title">
                 <h1>Jerry's Photos</h1>
                 <div class="nav">
                     <a href="index.html">Home</a>
-                    <a href="musicLinks.html">Music</a>
+                    <a href="musicLinks.html">Music</a> 
                     <a href="picGallery.html">Pictures</a>
                     <a href="page3.html">Misc</a>
                 </div>
             </div>
         </header>
 
+        <button onclick="goTop()" id="topButton" title="Top of Page">Return to Top</button>
+
         <div class="galSections">
             <h4>Cool Food</h4>
             <div class="gallery">
-                <div class="expand"><img src="photos/noodles.JPG" alt="Bun Bo Hue" ></div>
+                <div class="expand"><img src="photos/noodles.JPG" id="f1" alt="Bun Bo Hue" onclick="showPic('f',1)"></div>
             </div>
             <h4>Trip to Santa Cruz</h4>
             <div class="gallery">
-                <div class="expand"><img src="photos/IMG_7248.JPG" alt="pic of trip!" 
+                <div class="expand"><img src="photos/IMG_7248.JPG" id="t1" alt="pic of trip!" onclick="showPic('t',1)"
                     title="Stay hydrated everyone!!"></div>
-                <div class="expand"><img src="photos/IMG_7253.JPG" alt="pic of trip!" 
+                <div class="expand"><img src="photos/IMG_7253.JPG" id="t2" alt="pic of trip!" onclick="showPic('t',2)"
                     title="This was actually a candid!"></div>
-                <div class="expand"><img src="photos/IMG_7252.JPG" alt="pic of trip!"></div>
-                <div class="expand"><img src="photos/IMG_7331.JPG" alt="pic of trip!" ></div>
-                <div class="expand"><img src="photos/IMG_7298.JPG" alt="pic of trip!" ></div>
-                <div class="expand"><img src="photos/IMG_7312.JPG" alt="pic of trip!" ></div>
-                <div class="expand"><img src="photos/IMG_7336.JPG" alt="pic of trip!" ></div>
-                <div class="expand"><img src="photos/IMG_7337.JPG" alt="pic of trip!" ></div>
+                <div class="expand"><img src="photos/IMG_7252.JPG" id="t3" alt="pic of trip!" onclick="showPic('t',3)"></div>
+                <div class="expand"><img src="photos/IMG_7331.JPG" id="t4" alt="pic of trip!" onclick="showPic('t',4)"></div>
+                <div class="expand"><img src="photos/IMG_7298.JPG" id="t5" alt="pic of trip!" onclick="showPic('t',5)"></div>
+                <div class="expand"><img src="photos/IMG_7312.JPG" id="t6" alt="pic of trip!" onclick="showPic('t',6)"></div>
+                <div class="expand"><img src="photos/IMG_7336.JPG" id="t7" alt="pic of trip!" onclick="showPic('t',7)"></div>
+                <div class="expand"><img src="photos/IMG_7337.JPG" id="t8" alt="pic of trip!" onclick="showPic('t',8)"></div>
+            </div>
+        </div>
+
+        <div class="bigBackground" id="background" onclick="exitBigPicture()">
+            <div class="bigPicture" id="pict">
             </div>
         </div>
     </body>
