@@ -40,7 +40,8 @@ function showPic(gallery, picture){
     //var frame = document.createElement("div");
     var pic = document.createElement("img");
 
-    background.style.display = "block"
+    background.style.display = "flex"
+    background.style.flexDirection = "row"
     var child = background.lastElementChild;
     while (child){
         background.removeChild(child);
@@ -109,7 +110,7 @@ function showPic(gallery, picture){
 //window.onclick = function {exitBigPicture};
 
 function exitBigPicture(){
-    if (document.getElementById("background").style.display == "block"){
+    if (document.getElementById("background").style.display == "flex"){
         document.getElementById("background").style.display = "none"
     }
 }
