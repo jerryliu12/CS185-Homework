@@ -1,5 +1,5 @@
 .header{
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 .nav-bar{
@@ -127,3 +127,70 @@ body{
   align-self: center;
 }
 
+.guestbook{
+  width:80%;
+  height: auto;
+  margin:auto;
+  padding: 10px;
+  font-size: 16 px;
+  overflow-wrap: break-word;
+}
+
+.guestForm{
+  width: 40%;
+  height: auto;
+  float: left;
+}
+
+.guestDisplay{
+  margin-left: 40%;
+  height:auto;
+  overflow-y: auto;
+}
+
+input, textarea{
+  padding: 6px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:60%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.item {
+  white-space: nowrap;
+  display: inline;
+}
+
+input[type=checkbox]{
+  width:15px;
+  margin-left:10px;
+}
+
+#publicPosts{
+  list-style:none;
+}
+
+#username{
+  text-align: left;
+  margin-left: 5px;
+}
+
+li{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom right, grey, blue);
+}
+
+#timeDisplay{
+  font-size: 12px;
+  font-style: italic;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.description{
+  font-style: italic;
+  font-size: 12 px;
+  text-align: left;
+  margin-left: 10px;
+}

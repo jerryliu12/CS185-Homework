@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ScriptTag from 'react-script-tag';
 import './App.css'
 import TabList from "./Components/TabList"
 import Body from "./Components/Body"
+
 
 function goTop(){
   document.body.scrollTop = 0;
@@ -10,8 +10,8 @@ function goTop(){
 }
 
 export class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       activeTab: 0,
       buttonVisible: false,
@@ -48,7 +48,7 @@ export class App extends Component {
   }
 
   render() {
-    const pageName = ["Homepage", "Music", "Photos", "Miscellaneous"]
+    const pageName = ["Homepage", "Music", "Photos", "Miscellaneous", "Guestbook"]
     const tabs = [
     {
       id:0,
@@ -65,7 +65,11 @@ export class App extends Component {
     {
       id:3,
       title: "Misc"
-    }   
+    },
+    {
+      id:4,
+      title: "Guestbook"
+    }      
     ]
 
     return (

@@ -3,6 +3,7 @@ import Home from './Home'
 import Pictures from './Pictures'
 import Music from './Music'
 import Misc from './Misc'
+import Guestbook from './Guestbook';
 
 export class Body extends Component {
     displayContent = () => {
@@ -16,8 +17,11 @@ export class Body extends Component {
         else if(activeTab == 2){ 
             return <Pictures/>
         }
-        else {
+        else if(activeTab == 3){
             return <Misc/>
+        }
+        else{
+            return <Guestbook/>
         }
     }
     render() {
