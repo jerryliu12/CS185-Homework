@@ -48,7 +48,6 @@ export class Guestbook extends Component {
                 data: currPosts
             });
         })
-        console.log("TRUE")
     }
 
     componentDidUpdate(prevProps, prevState, snapshot){
@@ -145,7 +144,7 @@ export class Guestbook extends Component {
                         <h2>Posted Messages</h2>
                         <ul id="publicPosts">
                             {this.state.data.map((pubPost) => {
-                                let timedisplay = new Intl.DateTimeFormat('en-US', {year:'numeric', month:'2-digit', day:'2-digit', hour:'numeric', minute:'2-digit'}).format(pubPost.timestamp);
+                                let timedisplay = new Intl.DateTimeFormat('en-US', {year:'numeric', month:'2-digit', day:'2-digit', hour:'numeric', minute:'2-digit'}).format(pubPost.time);
                                 return (
                                     <li key={pubPost.id}>
                                         <h2 id="username">{pubPost.user}</h2>
