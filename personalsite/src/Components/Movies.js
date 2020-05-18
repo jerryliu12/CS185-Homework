@@ -69,7 +69,7 @@ export class Movies extends Component {
         //getMovieData()
         try{
             for (let i=0;i<movieList.length; i++){
-                const response = await axios.get(`http://www.omdbapi.com/?apikey=${APIKEY}&i=${movieList[i]}`)
+                const response = await axios.get(`https://www.omdbapi.com/?apikey=${APIKEY}&i=${movieList[i]}`)
                 const json = await response
                 movies.push( {
                     title:json.data.Title, 
