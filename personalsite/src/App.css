@@ -127,6 +127,21 @@ body{
   align-self: center;
 }
 
+
+.bigBackground h1{
+  justify-content: top;
+  display:flex;
+  color: pink;
+  vertical-align: top;
+
+}
+
+.bigBackground h3{
+  display:flex;
+  color: yellow;
+  vertical-align: text-bottom;
+}
+
 .guestbook{
   width:80%;
   height: auto;
