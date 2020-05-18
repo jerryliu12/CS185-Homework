@@ -48,7 +48,7 @@ export class App extends Component {
   }
 
   render() {
-    const pageName = ["Homepage", "Music", "Photos", "Miscellaneous", "Guestbook"]
+    const pageName = ["Homepage", "Music", "Photos", "Miscellaneous", "Guestbook", "Movies"]
     const tabs = [
     {
       id:0,
@@ -69,7 +69,11 @@ export class App extends Component {
     {
       id:4,
       title: "Guestbook"
-    }      
+    },
+    {
+      id:5,
+      title: "Movies"
+    }
     ]
 
     return (
