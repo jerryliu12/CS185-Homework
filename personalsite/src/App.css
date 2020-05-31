@@ -133,13 +133,14 @@ body{
   display:flex;
   color: pink;
   vertical-align: top;
-
+  height:auto;
 }
 
 .bigBackground h3{
   display:flex;
   color: yellow;
   vertical-align: text-bottom;
+  height:10%;
 }
 
 .guestbook{

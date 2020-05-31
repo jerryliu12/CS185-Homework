@@ -12,7 +12,7 @@ function showPic(picture){
     var background = document.getElementById("background");
     var pic = document.createElement("img");
     background.style.display = "flex"
-    background.style.flexDirection = "row"
+    background.style.flexDirection = "column"
     var child = background.lastElementChild;
     while (child){
         background.removeChild(child);
